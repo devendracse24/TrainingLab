@@ -1,4 +1,4 @@
-package training.ideas.java.Fizzbuzz;
+package training.ideas.java.fizzbuzz1;
 
 /**
  * Created by idndde on 8/10/2014.

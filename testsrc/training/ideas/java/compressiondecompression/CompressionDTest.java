@@ -23,5 +23,22 @@ public class CompressionDTest {
         String output="A2B3";
         Assert.assertEquals(output, CompressionD.compress(input));
     }
+
+    @Test
+    public  void compression_string_when_input_ABC()
+    {
+        String input="ABC";
+        String output="ABC";
+        Assert.assertEquals(output, CompressionD.compress(input));
+    }
+
+    @Test
+    public  void compression_string_when_input_AABBBBCCCC()
+    {
+        String input="AABBBCCCC";
+        String output="A2B3C4";
+        Assert.assertEquals(output, CompressionD.compress(input));
+    }
 }
+
 

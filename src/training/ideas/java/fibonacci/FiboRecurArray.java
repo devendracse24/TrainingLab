@@ -1,29 +1,35 @@
-//package training.ideas.java.fibonacci;
-//
-///**
-// * Created by idndde on 8/7/2014.
-// */
-//public class FiboRecurArray {
-//
-//    public static int[] fiboArr(int[] numbers) {
-//
-//        int arrayfib[]=new int [numbers];
-//        public int [] fiboArrCalc(arrayfib,numbers){
-//
-//            if(numbers==0){
-//                return ;
-//            }
-//            if (numbers==1){
-//                arrayfib[0]=0;
-//                return arrayfib;
-//            }
-//            if(numbers==2){
-//                arrayfib[1]=1;
-//                return arrayfib;
-//            }
-//            fiboArrCalc(arrayfib,fiboArrCalc(numbers-1))+
-//
-//        }
-//
-//
-//}
+package training.ideas.java.fibonacci;
+
+/**
+* Created by idndde on 8/7/2014.
+*/
+public class FiboRecurArray {
+
+    public static int[] fiboArr(int number)
+    {
+            int[] fibonacciSeriesArray = new int[number];
+            fibonacciSeries(fibonacciSeriesArray,number);
+            return fibonacciSeriesArray;
+
+        }
+    public static void fibonacciSeries(int[] fibonacciSeriesArray, int num) {
+        if (num == 0)
+        {
+            return;
+        }
+        if (num == 1)
+        {
+            fibonacciSeriesArray[0] = 0;
+            return;
+        }
+        if (num == 2)
+        {
+            fibonacciSeriesArray[1] = 1;
+            return ;
+        }
+        fibonacciSeries(fibonacciSeriesArray, num - 1);
+
+        fibonacciSeriesArray[num - 1] = fibonacciSeriesArray[num - 2] + fibonacciSeriesArray[num - 3];
+
+    }
+}

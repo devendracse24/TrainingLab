@@ -1,4 +1,4 @@
-package training.ideas.java.Fizzbuzz;
+package training.ideas.java.fizzbuzz1;
 
 import org.junit.Assert;
 import org.junit.Test;
